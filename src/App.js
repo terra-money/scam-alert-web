@@ -8,7 +8,7 @@ function App() {
       <img src={warning} alt='warning' />
       <h2>SCAM ALERT</h2>
       <p>
-        You are trying to visit <span className='url'>{document.referrer}</span> which is a known scam website.
+        You are trying to visit <span className='url'>{document.referrer}</span><br/>which is a known scam website.
       </p>
       <span
         onClick={() => {
