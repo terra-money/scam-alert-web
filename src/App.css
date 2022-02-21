@@ -1,47 +1,81 @@
+:root {
+  --danger: #ff5561;
+  --bg: #fff6f7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gotham', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #e82b09;
+  background-color: var(--bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #111111;
 }
 
-.App-link {
-  color: #61dafb;
+.App h2 {
+  margin: 5px 69px 10px 71px;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.78px;
+  color: var(--danger);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App p {
+  margin: 10px 0 40px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.44px;
+  text-align: center;
+  color: #111;
 }
 
-button {
-  background-color: white;
-  border: 0;
-  font-size: large;
-  padding: .4rem 1.2rem;
-  border-radius: .6rem;
+.url {
+  margin: 10px 0 40px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.44px;
+  text-align: center;
+  color: #111;
+}
+
+.App img {
+  width: 4.6rem;
+}
+
+.button {
+  text-decoration: none;
+  font-family: 'Gotham', sans-serif;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--danger);
+
+  padding: 17px 38px;
+  border-radius: 30px;
+  border: 1px solid var(--danger);
+  background-color: var(--bg);
+}
+
+.button:hover {
+  color: var(--bg);
+  background-color: var(--danger);
 }

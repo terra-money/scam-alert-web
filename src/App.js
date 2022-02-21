@@ -1,14 +1,23 @@
+import warning from './warning.svg';
+import './fonts.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          You are trying to visit <code>{document.referrer || 'UNDEFINED'}</code> which is a known scam website.
-        </p>
-        <button onClick={() => { window.location.href = document.referrer}}>Visit anyway</button>
-      </header>
+      <img src={warning} alt='warning' />
+      <h2>SCAM ALERT</h2>
+      <p>
+        You are trying to visit <span className='url'>{document.referrer}</span> which is a known scam website.
+      </p>
+      <span
+        onClick={() => {
+          window.location.href = document.referrer;
+        }}
+        className='button'
+      >
+        Visit anyway
+      </span>
     </div>
   );
 }
