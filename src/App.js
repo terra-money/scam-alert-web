@@ -2,9 +2,11 @@ import warning from './warning.svg'
 import './fonts.css'
 import './App.css'
 
+const SAFE_PAGE = 'https://station.terra.money'
+
 function App() {
   if (!document.referrer || document.referrer === window.location.href) {
-    //window.location.href = 'https://station.terra.money'
+    window.location.href = SAFE_PAGE
   }
   return (
     <div className='App'>
@@ -17,11 +19,11 @@ function App() {
       </p>
       <span
         onClick={() => {
-          window.open('', '_self').close()
+          window.location.href = SAFE_PAGE
         }}
         className='button__main'
       >
-        Close this tab
+        Go back to safety
       </span>
       <a
         href={document.referrer}
