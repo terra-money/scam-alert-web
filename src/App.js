@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   if (!document.referrer || document.referrer === window.location.href) {
-    window.location.href = 'https://station.terra.money'
+    //window.location.href = 'https://station.terra.money'
   }
   return (
     <div className='App'>
@@ -17,12 +17,17 @@ function App() {
       </p>
       <span
         onClick={() => {
-          window.location.href = document.referrer
+          window.open('', '_self').close()
         }}
-        className='button'
+        className='button__main'
+      >
+        Close this tab
+      </span>
+      <a
+        href={document.referrer}
       >
         Visit anyway
-      </span>
+      </a>
     </div>
   )
 }

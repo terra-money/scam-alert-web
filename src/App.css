@@ -1,6 +1,7 @@
 :root {
   --danger: #ff5561;
   --bg: #fff6f7;
+  --bg-muted: #ff556130;
 }
 
 body {
@@ -60,22 +61,34 @@ body {
   width: 4.8rem;
 }
 
-.button {
+.button__main {
   text-decoration: none;
   font-family: 'Gotham', sans-serif;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  color: var(--danger);
+  color: var(--bg);
+  background-color: var(--danger);
 
   padding: .9rem 2.2rem;
   border-radius: 30px;
   border: 1px solid var(--danger);
-  background-color: var(--bg);
 }
 
-.button:hover {
-  color: var(--bg);
-  background-color: var(--danger);
+.button__main:hover {
+  color: var(--danger);
+  background-color: var(--bg-muted);
+}
+
+a {
+  color: var(--danger);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
 }
