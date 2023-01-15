@@ -1,4 +1,4 @@
-import warning from './warning.svg'
+import warning from './station.svg'
 import './fonts.css'
 import './App.css'
 
@@ -6,7 +6,7 @@ const SAFE_PAGE = 'https://station.terra.money'
 
 function App() {
   if (!document.referrer || document.referrer === window.location.href) {
-    window.location.href = SAFE_PAGE
+    //window.location.href = SAFE_PAGE
   }
   return (
     <div className='App'>
@@ -25,11 +25,13 @@ function App() {
       >
         Go back to safety
       </span>
+      {/*
       <a
         href={document.referrer}
       >
         Visit anyway
       </a>
+      */}
     </div>
   )
 }
