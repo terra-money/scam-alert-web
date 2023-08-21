@@ -1,8 +1,8 @@
-import warning from './station.svg'
-import './fonts.css'
-import './App.css'
+import warning from './station.svg';
+import './fonts.css';
+import './App.css';
 
-const SAFE_PAGE = 'https://station.money'
+const SAFE_PAGE = 'https://station.money';
 
 function App() {
   if (!document.referrer || document.referrer === window.location.href) {
@@ -19,7 +19,7 @@ function App() {
       </p>
       <span
         onClick={() => {
-          window.location.href = SAFE_PAGE
+          window.location.href = SAFE_PAGE;
         }}
         className="button__main"
       >
@@ -33,7 +33,7 @@ function App() {
       </a>
       */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
