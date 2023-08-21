@@ -10,7 +10,7 @@ function App() {
     //window.location.href = SAFE_PAGE
   }
 
-  if (document.referrer || true) {
+  if (document.referrer) {
     const { hostname } = new URL(document.referrer)
     if (hostname === 'terra.money' || hostname.endsWith('.terra.money')) {
       return (
