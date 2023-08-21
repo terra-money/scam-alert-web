@@ -2,6 +2,10 @@
   --danger: #ff5561;
   --bg: #fff6f7;
   --bg-muted: #ff556130;
+
+  --warning: #5571ff;
+  --bg-warning: #f6faff;
+  --bg-muted: #55a1ff30;
 }
 
 body {
@@ -22,6 +26,17 @@ body {
   color: #111111;
 }
 
+.app__terra {
+  text-align: center;
+  background-color: var(--bg-warning);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+}
+
 .App h2 {
   margin: 5px 69px 5px 71px;
   font-size: 28px;
@@ -31,6 +46,17 @@ body {
   line-height: 1.5;
   letter-spacing: -0.78px;
   color: var(--danger);
+}
+
+.app__terra h2 {
+  margin: 20px 69px -10px 71px;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.78px;
+  color: var(--warning);
 }
 
 .App p {
@@ -57,7 +83,7 @@ body {
   color: #111;
 }
 
-.App img {
+.App img, .app__terra img {
   width: 4.8rem;
 }
 
@@ -81,8 +107,16 @@ body {
   background-color: var(--bg-muted);
 }
 
-a {
+.App a {
   color: var(--danger);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.app__terra a {
+  color: var(--warning);
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
