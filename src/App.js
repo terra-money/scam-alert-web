@@ -11,7 +11,7 @@ function App() {
   }
 
   if (document.referrer || true) {
-    const { hostname } = new URL("https://finder.terra.money/") //document.referrer)
+    const { hostname } = new URL(document.referrer)
     if (hostname === 'terra.money' || hostname.endsWith('.terra.money')) {
       return (
         <div className='app__terra'>
