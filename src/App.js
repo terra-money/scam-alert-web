@@ -1,8 +1,8 @@
-import warning from "./station.svg"
-import "./fonts.css"
-import "./App.css"
+import warning from './station.svg'
+import './fonts.css'
+import './App.css'
 
-const SAFE_PAGE = "https://station.money"
+const SAFE_PAGE = 'https://station.money'
 
 function App() {
   if (!document.referrer || document.referrer === window.location.href) {
